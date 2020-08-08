@@ -1,0 +1,2 @@
+export const SET_ROUND = 'SET/SET_ROUND';
+export const SET_ACTIVE_BIRD_INFO_ID = 'SET/SET_ACTIVE_BIRD_INFO_ID';

@@ -1,0 +1,17 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  &__img {
+    width: 200px;
+    height: 55px;
+    background: url('../../imgs/logo.svg') no-repeat;
+    background-size: 200px 55px;
+  }
+
+  &__score {
+    font-size: 20px;
+    color: white;
+  }
+}

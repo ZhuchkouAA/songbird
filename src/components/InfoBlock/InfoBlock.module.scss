@@ -1,0 +1,38 @@
+.InfoBlock {
+  color: white;
+  background-color: #303030;
+  width: 45%;
+  margin-left: 30px;
+  padding: 15px;
+
+  &__img {
+    border-radius: 5px;
+    overflow: hidden;
+    height: 155px;
+  }
+
+  &__title {
+    font-size: 22px;
+    margin: 10px 0;
+  }
+
+  &__title-mini {
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+    padding: 5px 0;
+  }
+
+  &__info {
+    display: flex;
+  }
+
+  &__player {
+    margin-left: 30px;
+    flex-grow: 2;
+  }
+
+  &__description {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+}

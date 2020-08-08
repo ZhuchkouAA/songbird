@@ -1,0 +1,36 @@
+.Answers {
+  list-style: none;
+  background-color: #303030;
+  width: 40%;
+  border-radius: 5px;
+  border: 1px #555 solid;
+  padding-left: 0;
+  margin: 0;
+
+  li {
+    font-size: 15px;
+    padding: 15px;
+    border-bottom: 1px #555 solid;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  li:last-child {
+    border: 0;
+  }
+
+  li:hover {
+    background-color: #444;
+  }
+
+  &__point {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+    border-radius: 50%;
+    background-color: #444;
+  }
+
+
+}

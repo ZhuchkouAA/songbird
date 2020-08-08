@@ -1,0 +1,35 @@
+.rhap_container {
+  background: none;
+  box-shadow: none;
+}
+
+.rhap_container,
+.rhap_progress-container,
+.rhap_play-pause-button {
+  outline: none;
+
+}
+
+.rhap_main {
+  flex-direction: row-reverse;
+}
+
+.rhap_controls-section {
+  flex: 0;
+}
+
+.rhap_time {
+  color: #ffffff;
+}
+
+.rhap_rewind-button,
+.rhap_forward-button,
+.rhap_additional-controls,
+.rhap_volume-controls {
+  display: none;
+}
+
+.rhap_controls-section {
+  display: flex;
+  justify-content: center;
+}

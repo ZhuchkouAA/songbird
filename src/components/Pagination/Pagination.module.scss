@@ -1,0 +1,31 @@
+.Pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #008966;
+  list-style: none;
+  color: #ffffff;
+  padding-left: 0;
+  border-radius: 5px;
+
+  &__active {
+    background-color: #00bc8c;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 185px;
+    height: 35px;
+    text-align: center;
+  }
+
+  li:first-child {
+    border-radius: 5px 0 0 5px;
+  }
+
+  li:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+}
