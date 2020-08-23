@@ -13,21 +13,26 @@ type PlayerBlockType = {
 }
 
 const PlayerBlock = ({ gameData }:PlayerBlockType) => {
+    const currentBirdData = birdsData[gameData.round][gameData.hiddenBird];
+    const { isTrueAnswer } = gameData;
+    const { image } = currentBirdData;
+
     const Player = () => (
         <AudioPlayer
-            src="google.coasdas"
+            src={currentBirdData.audio}
             autoPlay={false}
-            onPlay={e => console.log("onPlay")}
+            autoPlayAfterSrcChange={false}
+            onPlay={() => console.log("onPlay")}
         />
     );
 
-    const showingBirdText = birdsData[gameData.round][gameData.hiddenBird].name;
+    const showingBirdText = currentBirdData.name;
     let hiddenBirdText = '******';
     const hiddenBirdElem = () => (gameData.isTrueAnswer) ? showingBirdText : hiddenBirdText;
 
   return (
     <div className={styles.PlayerBlock}>
-      <div className={styles.PlayerBlock__img}><img src={birgImg} alt="bird" /></div>
+      <div className={styles.PlayerBlock__img}><img src={isTrueAnswer ? image : birgImg} alt="bird" /></div>
       <div className={styles['PlayerBlock__player-container']}>
         <div className={styles['PlayerBlock__hidden-text']}>{hiddenBirdElem()}</div>
         <div className={styles.PlayerBlock__player}>{Player()}</div>

@@ -2,13 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { Provider } from 'react-redux';
+import {connect, Provider} from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 import store from './redux/redux-store';
+import Answers from "./components/Answers/Answers";
+
+const mapStateToProps = ({ gameData }) => ({
+    gameData
+});
+
+const AppContainer = connect(mapStateToProps)(App);
 
 ReactDOM.render(
     <Provider store={store}>
-        <App />
+        <AppContainer />
     </Provider>,
   document.getElementById('root')
 );

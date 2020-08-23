@@ -1,0 +1,19 @@
+.EndGameBlock {
+  color: white;
+  text-align: center;
+
+  &__title {
+    margin-top: 100px;
+    font-size: 72px;
+  }
+
+  &__description {
+    margin: 30px 0 100px;
+    font-size: 20px;
+  }
+
+  &__button {
+    font-size: 16px;
+    height: 50px;
+  }
+}

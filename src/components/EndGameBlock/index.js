@@ -1,4 +1,4 @@
-import Button from './Button';
+import EndGameBlock from './EndGameBlock';
 import {connect} from "react-redux";
 import {setRound} from "../../redux/actions/creators/game-data";
 
@@ -10,4 +10,4 @@ const actionCreators = {
     setRound,
 };
 
-export default connect(mapStateToProps, actionCreators)(Button);
+export default connect(mapStateToProps, actionCreators)(EndGameBlock);

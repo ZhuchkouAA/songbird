@@ -23,13 +23,26 @@
     background-color: #444;
   }
 
-  &__point {
+  &__point,
+  &__point_correct,
+  &__point_incorrect {
     display: inline-block;
     width: 10px;
     height: 10px;
     margin-right: 15px;
     border-radius: 50%;
+  }
+
+  &__point {
     background-color: #444;
+  }
+
+  &__point_correct {
+    background-color: #008000;
+  }
+
+  &__point_incorrect {
+    background-color: #ff0000;
   }
 
 

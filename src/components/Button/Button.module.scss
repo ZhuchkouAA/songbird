@@ -13,3 +13,9 @@
 .Button:hover {
   background-color: #02eaaf;
 }
+
+.disabled,
+.disabled:hover {
+  background-color: #728985;
+  cursor: default;
+}

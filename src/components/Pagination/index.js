@@ -1,3 +1,8 @@
+import {connect} from "react-redux";
 import Pagination from './Pagination';
 
-export default Pagination;
+const mapStateToProps = ({ gameData }) => ({
+    gameData
+});
+
+export default connect(mapStateToProps)(Pagination);

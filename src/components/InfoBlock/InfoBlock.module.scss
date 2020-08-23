@@ -9,6 +9,12 @@
     border-radius: 5px;
     overflow: hidden;
     height: 155px;
+
+    img {
+      object-fit: cover;
+      width: 200px;
+      height: 155px;
+    }
   }
 
   &__title {
